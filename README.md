@@ -48,16 +48,29 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-[YOUR ANSWER HERE]
+- [Note frequencies](https://pages.mtu.edu/~suits/notefreqs.html)
+- [Using Math.random](https://developer.mozilla.org/en-US/docs/web/javascript/reference/global_objects/math/random)
+- [Using setTimeout](https://www.w3schools.com/jsref/met_win_settimeout.asp)
+- [Using alert with a variable value](https://stackoverflow.com/questions/2983288/alert-a-variable-value)
+- [Using onmousedown](https://www.w3schools.com/jsref/event_onmousedown.asp)
+- Asked friends to playtest the game and offer suggestions
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+words
+My biggest challenge while creating this game was designing and implementing a feature that would make my game version unique. The first part of this challenge was brainstorming ideas and the second part was finding a way to transform my idea into code. While brainstorming, I tried a few different versions of the game that had different images on the buttons, and eventually I decided on using hand-drawn fruit icons. My initial version just had a fruit image appear when clicked, but when talking about this game with a friend, I was given the idea of actually using two images per button: one for a whole fruit, and another icon that represents the fruit being sliced when the user clicked it. 
+After coming up with my idea, I made a pseudocode outline of my logic thought process which was inspired by how we implemented the “Start” and “Stop” button. I similarly used the html event “onclick” to switch between the two images. However, when I tested this I quickly realized that there was an issue since the image did not go away when the user released the button. I searched for guidance online and discovered the “onmousedown” event which achieved my goal. Next, I had trouble with making the two images appear and disappear during the correct conditions, and I faced a bug where sometimes both the whole and cut images would be shown. I tried to add the images to the “hidden” class in the html file, but then I realized that it would be more clear to write separate functions to address this issue: appear() and disappear(). I rewrote my pseudocode outline to make sure I had a defined plan and called my new functions inside my button elements. During this whole process I had to do a lot of testing and debugging, and I found the console debugging feature to be very useful. I also found some helpful resources online that explained different functions and provided examples of their usage. 
+Overall, overcoming this challenge taught me the importance of collaboration and exchanging ideas with other people. It also taught me how to research solutions for my errors, and it gave me experience with debugging and testing code. 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+I’m curious about how web development testing is done. During this small project, I was mostly the only person who was running the game to make the features work as expected, but it is likely that only having one person test the program would result in uncaught errors. For example, maybe some features that work on one device would have errors when tested on a different device for various reasons. For large-scale projects, how is testing done and how do web developers determine when a project is “finished” or good enough to be published.
+Another question I have is about collaboration between multiple web developers. I know that Github is widely used when multiple people are contributing to one project, but I am curious about what happens when different people make different changes, and how final decisions are made about what to keep. What does the workflow look like during a web development project? 
+
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+With a few more hours, my main focus of the project would be to introduce customizability to the game so that players would be able to tailor the game to their preferences. 
+I would add a difficulty options such as allowing the player to select how many buttons there are (eg. 4, 5, 6) and allowing players to select a game speed (eg. normal, fast, extra fast). These changes would require more buttons in the HTML and adding CSS rules for them. Additionally, the variables in the script file would need to reference the user’s decision. Currently, the game does not take in any user input, so I would have to research how to design a website that is more interactive with the user. Additionally, I would consider adding the option for different game themes such as fruits, simple, animals, plants, etc. 
+On the testing side of web development, I would ask more friends I know to test the game and offer feedback and suggestions. Since I found collaboration so valuable when coming up with the button design, I think my project could be further improved with more ideas from a diverse group of people. 
+
 
 
 
