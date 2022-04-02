@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Fruit Ninja Memory Game!
+    </h1>
+    <p>
+      HOW TO PLAY: Press start to see &amp hear the first fruit clue. Press the matching button to repeat the clue and cut the fruit! 
+      <br> 
+      The sequence of clues increases each turn. After the clues play, you have 5 seconds to repeat it back. 
+      <br>
+      The clues speed up as you progress, and you have 3 lives until you lose the game. 
+    </p>
+    
+    <button id="startBtn" onclick="startGame()"> Start </button>
+    <button id="stopBtn" class="hidden" onclick="stopGame(); stopTime()"> Stop </button>
+    
+    <p>Countdown Timer: <span id="remainingTime">5</span> seconds left!</p>
+    <p>Lives: <span id="livesLeft">3</span></p>
+    
+  <div id="gameButtonArea">
+    <button id="button1" onclick="guess(1)" onmousedown="startTone(1); disappear('pearWhole'); appear('pearCut')" onmouseup="stopTone(); disappear('pearCut'); appear('pearWhole')">
+      <img id="pearWhole" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/pear3.png?v=1648193434712">
+      <img id="pearCut" class = "hidden" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/pearCut.png?v=1648205531746"></button>
+    <button id="button2" onclick="guess(2)" onmousedown="startTone(2); disappear('berryWhole'); appear('berryCut')" onmouseup="stopTone(); disappear('berryCut'); appear('berryWhole')">
+      <img id="berryWhole" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/berryWhole.png?v=1648239475926">
+      <img id="berryCut" class = "hidden" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/berryCut.png?v=1648239473609"></button>
+    <button id="button3" onclick="guess(3)" onmousedown="startTone(3); disappear('pomegWhole'); appear('pomegCut')" onmouseup="stopTone(); disappear('pomegCut'); appear('pomegWhole')">
+      <img id="pomegWhole" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/pomegranate2.png?v=1648194753276">
+      <img id="pomegCut" class = "hidden" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/pomegranate3.png?v=1648201089840"></button>
+    <br>
+    <button id="button4" onclick="guess(4)" onmousedown="startTone(4); disappear('lemonWhole'); appear('lemonCut')" onmouseup="stopTone(); disappear('lemonCut'); appear('lemonWhole')">
+      <img id="lemonWhole" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/lemon.png?v=1648194756944">
+      <img id="lemonCut" class = "hidden" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/lemonCut.png?v=1648204869930"></button>
+    <button id="button5" onclick="guess(5)" onmousedown="startTone(5); disappear('figWhole'); appear('figCut')" onmouseup="stopTone(); disappear('figCut'); appear('figWhole')">
+      <img id="figWhole" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/figWhole.png?v=1648208033534">
+      <img id="figCut" class = "hidden" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/figCut2.png?v=1648239482639"></button>
+    <button id="button6" onclick="guess(6)" onmousedown="startTone(6); disappear('coconutWhole'); appear('coconutCut')" onmouseup="stopTone(); disappear('coconutCut'); appear('coconutWhole')">
+      <img id="coconutWhole" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/coconutWhole.png?v=1648203168145">
+      <img id="coconutCut" class = "hidden" src="https://cdn.glitch.global/ec5308cc-b1e7-491f-a4f8-fd9d42e9c274/coconut.png?v=1648189189774"></button>
+  </div> 
+    
+  
+    
+  </body>
+</html>
