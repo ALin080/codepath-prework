@@ -6,7 +6,7 @@ Submitted by: **Angela Lin**
 
 Time spent: **8** hours spent in total (3 for required functionality, 5 for additional feautres and drawing the icons)
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/colorful-maize-hound?path=README.md%3A1%3A0)
 
 ## Required Functionality
 
@@ -41,10 +41,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
-![](gif3-link-here)
-![](gif4-link-here)
+![](https://media.giphy.com/media/aVEDv5zaETWXgouOTX/giphy.gif)
+![](https://media.giphy.com/media/0l7eKPnUI05xx8Jrpg/giphy.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
@@ -63,7 +61,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Interview Recording URL Link
 
-[My 5-minute Interview Recording](your-link-here)
+[My 5-minute Interview Recording](https://berkeley.zoom.us/rec/share/Lq81fbp8RUOBW3lDisnECyapSPtMPDkW5q6TBRVitrT-gkz-IMfOtQuje2MjHMQ.dokclRzkaPLskk7-?startTime=1648872881000)
 
 
 ## License
