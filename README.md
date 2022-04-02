@@ -2,11 +2,11 @@
 
 **Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
 
-Submitted by: **NAME**
+Submitted by: **Angela Lin**
 
-Time spent: **#** hours spent in total
+Time spent: **8** hours spent in total (3 for required functionality, 5 for additional and drawing icons)
 
-Link to project: (insert your link here, should start with https://glitch.com...)
+Link to project: (https://glitch.com/edit/#!/colorful-maize-hound?path=README.md%3A1%3A0)
 
 ## Required Functionality
 
